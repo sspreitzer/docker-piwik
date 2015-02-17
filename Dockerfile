@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 
-ENV PIWIK_VERSION 2.9.1
+ENV PIWIK_VERSION 2.10.0
 
 RUN apt-get update && apt-get install -y \
   curl \
