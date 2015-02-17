@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:latest
 
 ENV PIWIK_VERSION 2.10.0
 
