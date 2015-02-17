@@ -15,10 +15,6 @@ RUN apt-get update && apt-get install -y \
 ADD entrypoint.sh /usr/local/sbin/
 ADD piwik.conf /etc/apache2/sites-available/
 
-RUN curl http://builds.piwik.org/piwik-${PIWIK_VERSION}.tar.gz | \
-  tar xzf - -C /srv
-
-RUN chown -R www-data:www-data /srv/piwik
 RUN a2dissite 000-default
 RUN a2ensite piwik
 
